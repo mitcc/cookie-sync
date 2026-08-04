@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie 定时同步器",
+  "version": "1.0.0",
+  "description": "定时抓取指定网站 Cookie 并同步至本地文件",
+  "icons": {
+    "16": "cookie.png",
+    "48": "cookie.png",
+    "128": "cookie.png"
+  },
+  "permissions": [
+    "cookies",
+    "storage",
+    "alarms",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "cookie.png",
+      "24": "cookie.png",
+      "32": "cookie.png"
+    }
+  }
+}
